@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuantumFlow</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section class="hero" id="intro">
+    <div>
+      <h1>QuantumFlow</h1>
+      <p class="tagline">From Classical Bits to Quantum Qubits — explained visually</p>
+      <div class="row center">
+        <div class="bit" id="bit">0</div>
+        <div class="qubit"><div class="wave"></div><strong>0 + 1</strong></div>
+      </div>
+      <p class="why">Why it matters: understanding quantum computing starts with intuition, not equations.</p>
+    </div>
+  </section>
+
+  <section id="classical">
+    <h2>Classical Computing Baseline</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Interactive Bit</h3>
+        <p>Click to toggle between 0 and 1.</p>
+        <button onclick="toggleBit()">Toggle Bit</button>
+      </div>
+      <div class="card">
+        <h3>Limitation</h3>
+        <p>Classical systems process sequentially, making some problems inefficient.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="superposition">
+    <h2>Qubit & Superposition</h2>
+    <p>A qubit exists in multiple states simultaneously.</p>
+    <input type="range" min="0" max="100" value="50" oninput="updateProb(this.value)" />
+    <p>Probability Bias: <span id="prob">50</span>%</p>
+  </section>
+
+  <section id="entanglement">
+    <h2>Entanglement</h2>
+    <div class="pair">
+      <div class="bit" id="e1">0</div>
+      <div class="link"></div>
+      <div class="bit" id="e2">0</div>
+    </div>
+    <section class="reveal">
+  <h2>Core Quantum Concepts</h2>
+  <p>Key ideas explained using data-driven rendering.</p>
+  <div id="quantumConcepts" class="cards"></div>
+</section>
+    <button onclick="entangle()">Change One Qubit</button>
+  </section>
+
+  <section id="flow">
+    <h2>Quantum Computation Flow</h2>
+    <div class="flow">
+      <div class="step">Input</div>
+      <div class="step">Quantum Gates</div>
+      <div class="step">Measurement</div>
+      <div class="step">Output</div>
+    </div>
+  </section>
+
+  <section id="measurement">
+    <h2>Measurement & Collapse</h2>
+    <button onclick="measure()">Measure Qubit</button>
+    <p>Result: <strong id="result">—</strong></p>
+  </section>
+
+  <section id="compare">
+    <h2>Quantum vs Classical</h2>
+    <div class="compare">
+      <div class="card"><h3>Classical</h3><p>Deterministic, sequential</p></div>
+      <div class="card"><h3>Quantum</h3><p>Probabilistic, parallel</p></div>
+    </div>
+  </section>
+
+  <section id="ai">
+    <h2>Quantum + AI</h2>
+    <p>Quantum computing may accelerate optimization-heavy AI workloads.</p>
+  </section>
+
+  <section id="limits">
+    <h2>Limitations & Reality Check</h2>
+    <p>Noise, decoherence, and hardware instability remain major challenges.</p>
+  </section>
+
+  <section id="end">
+    <h2>Takeaway</h2>
+    <ul>
+      <li>Quantum is powerful but specialized</li>
+      <li>Conceptual clarity matters</li>
+      <li>The future is promising</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>QuantumFlow | Web Programming Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
